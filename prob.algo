@@ -25,34 +25,32 @@ finish
 
 
 //prob2 ☻  ♥ ♥
-algorithme dot_product
-    var v1, v2 = float
-    n =INTERGER
+
+
 //procedure 
-procedure dot_product:
-    begin
 
-
-
-
-
-
-
-
-
-
-
-
-    end 
+FUNCTION dot_product() :  
+    BEGIN
+          
+        ps=u[0]*v[0]+u[1]+v[1]
+        write("ps")
+            return ps
+    END
         
 algorithme ortogonale :
-    begin
+    BEGIN
+    var i,ps,n : INTERGER
+    v1 , v2 : INTERGER[2]
+    vectors : array of array[n]
+    for i from 0 to n
+        dot_products (vectors(vectors[i][0] , vectors[i][1]))
+    if ps= 0
+        write ( "vectors" , vectors[i] ,"they are orthogonal ")
+    else
+        write ( "vectors" , vectors[i] ,"they are not  orthogonal ")
 
 
 
 
 
-
-
-
-    end
+    END
