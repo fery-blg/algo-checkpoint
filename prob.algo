@@ -1,17 +1,17 @@
 //programme principale
-compare(n1,n2,t1,t)
+compare(n1,n2,t1,t2)
 //procedure initalization du taille du tableaux:
-var tab1=array of 5 INTERGER
-var tab2=array of 4 INTERGER
+var t1=array of 5 INTERGER
+var t2=array of 4 INTERGER
 var i = INTERGER;
 var sum = INTERGER;
 // procedure
 procedure compare(tab1 , tab2 )
 begin
 // compare each of the two tables
-    for i from 0 to 4 do :
-        for j from 0 to 3 do:
-            if tab1[i]!=tab2[j] then:
+    for i from 0 to 4 do 
+        for j from 0 to 3 do
+            if tab1[i]<>tab2[j] then
             // sum of the distinct elements of the two tables
                 sum=sum+tab1[i]
 
@@ -29,7 +29,7 @@ finish
 
 //procedure 
 
-FUNCTION dot_product() :  
+FUNCTION dot_product( v1 , v2 ) 
     BEGIN
           
         ps=u[0]*v[0]+u[1]+v[1]
@@ -37,7 +37,7 @@ FUNCTION dot_product() :
             return ps
     END
         
-algorithme ortogonale :
+algorithme ortogonale (v1 , v2 , ps )
     BEGIN
     var i,ps,n : INTERGER
     v1 , v2 : INTERGER[2]
@@ -48,9 +48,4 @@ algorithme ortogonale :
         write ( "vectors" , vectors[i] ,"they are orthogonal ")
     else
         write ( "vectors" , vectors[i] ,"they are not  orthogonal ")
-
-
-
-
-
     END
